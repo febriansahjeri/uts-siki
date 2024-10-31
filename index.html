@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoes Store</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" width="30" height="30" alt="Logo" />
+        Shoes Store
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#katalog">Katalog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Beranda -->
+    <section id="home" class="container text-center py-5">
+      <h1>selamat datang di toko kami</h1>
+      <p>never in tune but with one goal, if one is missing, one has no meaning</p>
+    </section>
+
+    <!-- Katalog Sepatu -->
+    <section id="katalog" class="container py-5">
+      <h2 class="text-center mb-4">Katalog Sepatu</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="img/volkmer.jpg"
+              class="card-img-top"
+              alt="Sepatu 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sepatu 1</h5>
+              <p class="card-text">Rp 500.000</p>
+              <button class="btn btn-primary" onclick="showDetail('Sepatu 1')">
+                Detail Produk
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="img/tom-radetzki.jpg"
+              class="card-img-top"
+              alt="Sepatu 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sepatu 2</h5>
+              <p class="card-text">Rp 700.000</p>
+              <button class="btn btn-primary" onclick="showDetail('Sepatu 2')">
+                Detail Produk
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="img/linda.jpg"
+              class="card-img-top"
+              alt="Sepatu 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sepatu 3</h5>
+              <p class="card-text">Rp 600.000</p>
+              <button class="btn btn-primary" onclick="showDetail('Sepatu 3')">
+                Detail Produk
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="container py-5">
+      <h2 class="text-center mb-4">Tentang Kami</h2>
+      <p class="text-center">
+        Shoes Store adalah toko sepatu yang menyediakan berbagai macam pilihan
+        sepatu berkualitas untuk berbagai kesempatan. Dengan pengalaman
+        bertahun-tahun di industri sepatu, kami berdedikasi untuk memberikan
+        produk terbaik bagi Anda.
+      </p>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="container py-5">
+      <h2 class="text-center mb-4">Kontak Kami</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Nama</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Nama Anda"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email Anda"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="3"
+            placeholder="Pesan Anda"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim</button>
+      </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
